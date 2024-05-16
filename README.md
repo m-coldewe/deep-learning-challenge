@@ -72,9 +72,9 @@ While this fourth attempt also did not achieve 75% accuracy, it did perform bett
 
 ## Summary 
 While none of the models performed as well as I had hoped, ending with ranked accuracy scores as follows:
-Model 4: 0.741
-Initial model: 0.7275
-Model 1: 0.7271
-Model 3: 0.7266
-Model 2: 0.658 
+- Model 4: 0.741
+- Initial model: 0.7275
+- Model 1: 0.7271
+- Model 3: 0.7266
+- Model 2: 0.658 
 I do believe the model is moving in the right direction. I'm not sure what sort of different model might achieve better results (or I would have done that) but for further optimization, I would recommend consolidating the Names at a lower value. The consolidation of 'Other' values for Names far exceeded any of the real value counts, which may have skewed the results. It also could be worth either binning the Ask Amount or dropping it from consideration. The most common ask amount within the dataset is 5000, effectively rendering every other Ask Amount an outlier, so consolidating the other values into ranger might clarify the relationship between Ask Amount and the rest of the features, or it might not be relevant. 
